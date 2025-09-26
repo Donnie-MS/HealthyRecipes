@@ -1,10 +1,24 @@
+# Parcial de Objetos II
+
+## Consideraciones Iniciales
+
+- El código entregado debe compilar obligatoriamente. Un parcial entregado cuyo código no compila queda desaprobado automáticamente.
+
+- Se realizará un control exhaustivo, incluyendo distintas herramientas de análisis estático de código para identificar posibles copias entre las soluciones entregadas.
+
+- La solución debe aplicar patrones de diseño apropiados para la problemática planteada.
+
+- El código entregado debe tener los test suficientes que garantice el correcto funcionamiento de la solucion que propone el alumno
+
+- No se aceptan entregas fuera de plazo ni que no estén correctamente subidas al repositorio del classroom de la materia
+
 # 🥗 Recetas Saludables del Nutricionista 🍲
 
 Un nutricionista nos pidió que modelemos un sistema que le permita definir las recetas para recomendar a clientes. Nuestro nutricionista siempre intenta que todos los clientes estén satisfechos con su comida 😋.
 
 ---
 
-## 🎯 ¿Te guesta esta Receta?
+## 🎯 ¿Te gusta la Receta?
 
 Cada cliente conoce el **criterio de recetas** que le gustan. Existen los siguientes criterios:
 
@@ -45,3 +59,7 @@ Cuando el nutricionista ejecuta la acción de **visitar a un cliente** ocurre lo
 
 ✅ El cliente recibe la receta y actualiza el registro de recetas recibidas.  
 🗑️ Si la receta era una de la lista, obviamente se elimina de ella.
+
+## Test
+
+Realizar el Conjunto de Test que garanticen que la solución funciona y cuando mayor sea el grado de covertura mejor es.
