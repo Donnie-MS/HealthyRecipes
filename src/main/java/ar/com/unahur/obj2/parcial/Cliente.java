@@ -18,11 +18,11 @@ public class Cliente {
     public Integer getDni() {
         return dni;
     }
-
+    /* 
     public CriterioStrategy getCriterio() {
         return criterio;
     }
-
+    */
     public void setCriterio(CriterioStrategy criterio) {
         this.criterio = criterio;
     }

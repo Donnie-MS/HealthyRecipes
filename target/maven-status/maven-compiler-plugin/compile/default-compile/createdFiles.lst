@@ -1,0 +1,10 @@
+ar/com/unahur/obj2/parcial/Main.class
+ar/com/unahur/obj2/parcial/Receta.class
+ar/com/unahur/obj2/parcial/criterios/Premiun.class
+ar/com/unahur/obj2/parcial/criterios/ComeTutti.class
+ar/com/unahur/obj2/parcial/Nutricionista.class
+ar/com/unahur/obj2/parcial/criterios/CriterioStrategy.class
+ar/com/unahur/obj2/parcial/criterios/AltoValorNutricional.class
+ar/com/unahur/obj2/parcial/Cliente.class
+ar/com/unahur/obj2/parcial/criterios/Combinado.class
+ar/com/unahur/obj2/parcial/criterios/Tradicional.class

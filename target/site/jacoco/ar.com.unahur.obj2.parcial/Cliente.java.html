@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Cliente.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">recetas-saludables</a> &gt; <a href="index.source.html" class="el_package">ar.com.unahur.obj2.parcial</a> &gt; <span class="el_source">Cliente.java</span></div><h1>Cliente.java</h1><pre class="source lang-java linenums">package ar.com.unahur.obj2.parcial;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import ar.com.unahur.obj2.parcial.criterios.ComeTutti;
+import ar.com.unahur.obj2.parcial.criterios.CriterioStrategy;
+
+public class Cliente {
+    private final Integer dni;
+<span class="fc" id="L11">    private CriterioStrategy criterio = new ComeTutti();</span>
+<span class="fc" id="L12">    private List&lt;Receta&gt; recetasRecibidas = new ArrayList&lt;&gt;();</span>
+
+<span class="fc" id="L14">    public Cliente(Integer dni) {</span>
+<span class="fc" id="L15">        this.dni = dni;</span>
+<span class="fc" id="L16">    }</span>
+
+    public Integer getDni() {
+<span class="fc" id="L19">        return dni;</span>
+    }
+    /* 
+    public CriterioStrategy getCriterio() {
+        return criterio;
+    }
+    */
+    public void setCriterio(CriterioStrategy criterio) {
+<span class="fc" id="L27">        this.criterio = criterio;</span>
+<span class="fc" id="L28">    }</span>
+
+    public Boolean leGusta(Receta receta) {
+<span class="fc" id="L31">        return criterio.leGusta(receta);</span>
+    }
+
+    public void recibirReceta(Receta receta) {
+<span class="fc" id="L35">        recetasRecibidas.add(receta);</span>
+<span class="fc" id="L36">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.10.202304240956</span></div></body></html>

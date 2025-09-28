@@ -19,8 +19,9 @@ public class Nutricionista {
         recetas.clear();
     }
 
+ 
     public List<Receta> getRecetas() {
-        return new ArrayList<>(recetas);
+        return recetas;
     }
 
     public void visitar(Cliente cliente) {
@@ -30,5 +31,9 @@ public class Nutricionista {
                 .orElse(new Receta("batido mágico", nombre, 2000, 0));
         cliente.recibirReceta(recetaAEntregar);
         recetas.remove(recetaAEntregar);
+    }
+
+    public String getNombre() {
+        return nombre;
     }
 }
