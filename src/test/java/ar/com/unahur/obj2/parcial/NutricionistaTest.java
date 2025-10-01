@@ -1,6 +1,7 @@
 package ar.com.unahur.obj2.parcial;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import org.junit.jupiter.api.Test;
 
@@ -20,6 +21,18 @@ public class NutricionistaTest {
         assertEquals("Hamburgesa de Legumbres", primerReceta);
 
     }
+
+    @Test
+    void dadoUnNutricionistaVisitarAlClienteYEntregarleElBatido() {
+        licNutri.visitar(cliente);
+        assertTrue(licNutri.getRecetas().isEmpty());
+        assertEquals("batido mágico", cliente.getRecetasRecibidas()
+        .stream()
+        .findFirst()
+        .orElse(new Receta("no encontrado", "nombre", 2000, 0))
+        .getNombre());
+    }
+
 
     @Test
     void dadoUnNutricionistaVerificarQueVisitaUnClienteYSVerificaSuNombre() {

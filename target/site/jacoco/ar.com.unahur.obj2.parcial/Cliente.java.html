@@ -18,21 +18,22 @@ public class Cliente {
     public Integer getDni() {
 <span class="fc" id="L19">        return dni;</span>
     }
-    /* 
-    public CriterioStrategy getCriterio() {
-        return criterio;
+    
+    
+    public List&lt;Receta&gt; getRecetasRecibidas() {
+<span class="fc" id="L24">        return recetasRecibidas;</span>
     }
-    */
+
     public void setCriterio(CriterioStrategy criterio) {
-<span class="fc" id="L27">        this.criterio = criterio;</span>
-<span class="fc" id="L28">    }</span>
+<span class="fc" id="L28">        this.criterio = criterio;</span>
+<span class="fc" id="L29">    }</span>
 
     public Boolean leGusta(Receta receta) {
-<span class="fc" id="L31">        return criterio.leGusta(receta);</span>
+<span class="fc" id="L32">        return criterio.leGusta(receta);</span>
     }
 
     public void recibirReceta(Receta receta) {
-<span class="fc" id="L35">        recetasRecibidas.add(receta);</span>
-<span class="fc" id="L36">    }</span>
+<span class="fc" id="L36">        recetasRecibidas.add(receta);</span>
+<span class="fc" id="L37">    }</span>
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.10.202304240956</span></div></body></html>

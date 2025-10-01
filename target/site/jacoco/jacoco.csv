@@ -1,6 +1,6 @@
 GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
 recetas-saludables,ar.com.unahur.obj2.parcial,Nutricionista,0,61,0,0,0,17,0,7,0,7
-recetas-saludables,ar.com.unahur.obj2.parcial,Cliente,0,34,0,0,0,11,0,5,0,5
+recetas-saludables,ar.com.unahur.obj2.parcial,Cliente,0,37,0,0,0,12,0,6,0,6
 recetas-saludables,ar.com.unahur.obj2.parcial,Receta,0,53,0,2,0,19,0,11,0,10
 recetas-saludables,ar.com.unahur.obj2.parcial.criterios,ComeTutti,0,5,0,0,0,2,0,2,0,2
 recetas-saludables,ar.com.unahur.obj2.parcial.criterios,Tradicional,0,6,0,0,0,2,0,2,0,2

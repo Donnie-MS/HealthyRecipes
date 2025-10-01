@@ -18,11 +18,12 @@ public class Cliente {
     public Integer getDni() {
         return dni;
     }
-    /* 
-    public CriterioStrategy getCriterio() {
-        return criterio;
+    
+    
+    public List<Receta> getRecetasRecibidas() {
+        return recetasRecibidas;
     }
-    */
+
     public void setCriterio(CriterioStrategy criterio) {
         this.criterio = criterio;
     }
