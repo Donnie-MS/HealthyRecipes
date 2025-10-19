@@ -13,16 +13,24 @@ public class Nutritionist {
     }
 
     public void visit(Client aClient) {
-        if(this.hasProperRecipe()) {
-
+        if(this.hasProperRecipe(aClient)) {
+            aClient.addReceivedRecipes(this.properRecipe(aClient));
         }
         else {
-            Recipe emergencyRecipe = new Recipe("magic smoothie", this.name, 2000, 0)
+            Recipe emergencyRecipe = new Recipe("magic smoothie", this.name, 2000, 0);
             aClient.addReceivedRecipes(emergencyRecipe);
         }
     }
 
-    private Boolean hasProperRecipe() {
-        return 
+    private Boolean hasProperRecipe(Client aClient) {
+        return availableRecipes.stream()
+                .anyMatch(recipe -> aClient.getRecipeGuideline().like(recipe));
+    }
+
+    private Recipe properRecipe(Client aClient) {
+        return availableRecipes.stream()
+                .filter(recipe -> aClient.getRecipeGuideline().like(recipe))
+                .findFirst()
+                .orElse(null);
     }
 }

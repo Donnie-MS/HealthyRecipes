@@ -13,6 +13,10 @@ public class Recipe {
         this.yearsOfTradition = yearsOfTradition;
     }
 
+    public String getName() {
+        return this.name;
+    }
+
     public Boolean isTraditional() {
         return (this.yearsOfTradition - 20) >= 0;
     }

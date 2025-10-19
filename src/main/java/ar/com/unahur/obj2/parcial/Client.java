@@ -17,6 +17,14 @@ public class Client {
         this.receivedRecipes = new ArrayList<>();
     }
 
+    public Long getDni() {
+        return this.dni;
+    }
+
+    public RecipeGuideline getRecipeGuideline() {
+        return this.recipeGuideline;
+    }
+
     public void setRecipeGuideLine(RecipeGuideline newRecipeGuideLine) {
         this.recipeGuideline = newRecipeGuideLine;
     }
